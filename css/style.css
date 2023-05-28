@@ -193,9 +193,9 @@ img {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container {
-    display: block;
-    padding-left: 28rem;
-    padding-top: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .card {
