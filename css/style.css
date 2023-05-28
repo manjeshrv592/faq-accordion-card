@@ -201,7 +201,6 @@ img {
   .card {
     max-width: 92rem;
     display: flex;
-    height: 51rem;
   }
 
   .card > * {
