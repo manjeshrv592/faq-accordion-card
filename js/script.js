@@ -18,3 +18,5 @@ accordions.forEach(accordion => {
     }
   });
 });
+
+accordions[1].click();
