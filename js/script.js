@@ -1,22 +1,22 @@
-const accordions = document.querySelectorAll('.accordion-head');
+const accordion = document.querySelector('.accordion');
+const accordionItems = document.querySelectorAll('.accordion-head');
 
-accordions.forEach(accordion => {
-  accordion.addEventListener('click', function (e) {
-    const el = e.target;
-    const accordionItem = el.closest('.accordion-item');
-    const accordionBodyWrapper = accordionItem.querySelector(
-      '.accordion-body-wrapper'
-    );
+accordion.addEventListener('click', function (e) {
+  const el = e.target;
 
-    accordionItem.classList.toggle('active');
+  if (!el.classList.contains('accordion-head')) return;
 
-    if (accordionItem.classList.contains('active')) {
-      accordionBodyWrapper.style.maxHeight =
-        accordionBodyWrapper.scrollHeight + 'px';
-    } else {
-      accordionBodyWrapper.style.maxHeight = '0px';
-    }
+  accordionItems.forEach(item => {
+    const accordionItem = item.closest('.accordion-item');
+    accordionItem.classList.remove('active');
+    accordionItem.querySelector('.accordion-body-wrapper').style.maxHeight =
+      '0px';
   });
+
+  const activeItem = el.closest('.accordion-item');
+  activeItem.classList.add('active');
+  activeItem.querySelector('.accordion-body-wrapper').style.maxHeight =
+    activeItem.querySelector('.accordion-body-wrapper').scrollHeight + 'px';
 });
 
-accordions[1].click();
+accordionItems[1].click();
