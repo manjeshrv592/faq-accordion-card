@@ -239,6 +239,21 @@ img {
     transform: translate(-50%, -25%);
   }
 
+  .desktop-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .desktop-pattern-img {
+    width: 96.4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-8rem, 15rem);
+  }
+
   .card-img-desktop .women-illustration {
     width: 47rem;
     transform: translate(-8rem, -1rem);
