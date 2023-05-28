@@ -11,12 +11,121 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    <h1>FAQ Accordion card</h1>
+    <main class="container">
+      <article class="card">
+        <div class="card-img-mobile">
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="Women online illustration"
+            class="women-illustration"
+          />
+          <img
+            src="./images/bg-pattern-mobile.svg"
+            alt="Mobile background"
+            class="mobile-bg"
+          />
+        </div>
+
+        <div class="card-img-desktop">
+          <img
+            src="./images/illustration-woman-online-desktop.svg"
+            alt="Women online illustration"
+            class="women-illustration"
+          />
+          <img
+            src="./images/illustration-box-desktop.svg"
+            alt="Box illustration"
+            class="desktop-box"
+          />
+        </div>
+        <div class="card-body">
+          <h1 class="card-title">faq</h1>
+
+          <!-- Accordion start -->
+          <div class="accordion">
+            <!-- Accordion item 1 start -->
+            <div class="accordion-item">
+              <button class="accordion-head">
+                How many team members can I invite?
+              </button>
+              <div class="accordion-body-wrapper">
+                <div class="accordion-body">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item 1 end -->
+            <!-- Accordion item 2 start -->
+            <div class="accordion-item">
+              <button class="accordion-head">
+                What is the maximum file upload size?
+              </button>
+              <div class="accordion-body-wrapper">
+                <div class="accordion-body">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item 2 end -->
+            <!-- Accordion item 3 start -->
+            <div class="accordion-item">
+              <button class="accordion-head">
+                How do I reset my password?
+              </button>
+              <div class="accordion-body-wrapper">
+                <div class="accordion-body">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item 3 end -->
+            <!-- Accordion item 4 start -->
+            <div class="accordion-item">
+              <button class="accordion-head">
+                Can I cancel my subscription?
+              </button>
+              <div class="accordion-body-wrapper">
+                <div class="accordion-body">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item 4 end -->
+            <!-- Accordion item 5 start -->
+            <div class="accordion-item">
+              <button class="accordion-head">
+                Do you provide additional support?
+              </button>
+              <div class="accordion-body-wrapper">
+                <div class="accordion-body">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item 5 end -->
+          </div>
+          <!-- Accordion end -->
+        </div>
+      </article>
+    </main>
     <!-- CONTENT -->
     <!-- How many team members can I invite?
   You can invite up to 2 additional users on the Free plan. There is no limit on 
@@ -34,5 +143,8 @@
 
   Do you provide additional support?
   Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
